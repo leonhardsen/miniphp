@@ -125,7 +125,7 @@ class queryBuilder{
 					$sql_where .= ' AND ';
 				}
 			}
-			$sql_where .= $where[0].$where[1].$where[2];
+			$sql_where .= $where[0].$where[1]."'".$where[2]."'";
 			$first_where++;
 		}
 		return $sql_where;
